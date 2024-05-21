@@ -10,6 +10,7 @@ import App from './App'
 import store from './store'
 
 import router from './router'
+import './permission' // permission control
 
 // 注册svg
 import '@/icons'

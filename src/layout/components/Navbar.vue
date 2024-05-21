@@ -4,7 +4,7 @@
       <el-dropdown class="avatar-container" trigger="click">
         <div class="avatar-wrapper">
           <!-- 用户名称 -->
-          <span class="name">黑马管理员</span>
+          <span class="name">系统管理员</span>
         </div>
         <el-dropdown-menu slot="dropdown" class="user-dropdown">
           <router-link to="/">
@@ -27,6 +27,7 @@ export default {
   methods: {
     // 退出登录
     logout() {
+      this.$store.commit('removeUserToken')
       this.$router.push(`/login?redirect=${this.$route.fullPath}`)
     }
   }
