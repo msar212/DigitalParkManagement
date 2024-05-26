@@ -44,7 +44,10 @@ export const routes = [
       component: () => import('@/views/Park/Enterprise/index')
     }]
   },
-
+  {
+    path: '/car/addMonthCard',
+    component: () => import('@/views/Car/CarCard/addMonthCard')
+  },
   {
     path: '/parking',
     component: Layout,
@@ -89,6 +92,10 @@ export const routes = [
       component: () => import('@/views/Rod/RodWarn'),
       meta: { title: '告警记录' }
     }]
+  },
+  {
+    path: '/addRole',
+    component: () => import('@/views/System/Role/AddRole')
   },
   {
     path: '/sys',
